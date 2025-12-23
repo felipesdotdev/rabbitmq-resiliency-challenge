@@ -59,15 +59,23 @@ rabbitmq-resiliency-challenge/
 ```
 
 ## 🚀 Como Rodar
-1. Subir a infraestrutura:
+
+1. **Instale as dependências:**
+   ```
+   npm install
+   ```
+
+2. **Suba o RabbitMQ:**
    ```
    docker compose up -d
    ```
-2. Iniciar o Consumer:
+
+3. **Inicie o Worker (Consumer):**
    ```
    npm run start:worker
    ```
-3. Iniciar a API:
+
+4. **Em outro terminal, inicie a API (Producer):**
    ```
    npm run start:api
    ```
